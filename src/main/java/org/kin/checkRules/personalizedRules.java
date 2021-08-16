@@ -16,7 +16,16 @@ public class personalizedRules extends baseRules {
 //
 //    }
 
-
-
+    /**
+     * 用水量检测
+     */
+    public static boolean checkConsumption(double current,double target ){
+        //若当前用水量小于阈值则正常，大于阈值则异常
+        if(current>target){
+            return false;
+        }else{
+            return true;
+        }
+    }
 
 }
